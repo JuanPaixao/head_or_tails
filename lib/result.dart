@@ -43,7 +43,8 @@ class _ResultState extends State<Result> {
               padding: EdgeInsets.only(top: 16),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pop(context);
+                  //Navigator.pop(context); //fechando a tela 
+                   Navigator.pushNamed((context), "/");//usando rota nomeada
                 },
                 child: Image.asset("images/botao_voltar.png"),
               ),
